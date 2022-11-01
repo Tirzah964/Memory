@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useContext } from "react";
+import IntroScreen from "./Components/screens/IntroScreen";
+import { GameContext } from "./context";
+import { Stages } from "./types";
+import GameState from "./state";
+import PlayScreen from "./Components/screens/PlayScreen";
+import WinnerScreen from "./Components/screens/WinnerScreen";
+import "./Components/screens/PlayScreen.css"
+
+function ScreenStageWrapper() {
+  const { state, dispatch } = useContext(GameContext);
+
+
+  switch (state.stage) {
+    case Stages.Intro:
+      return <IntroScreen></IntroScreen>;
+    case Stages.GetInfo:
+      return <div>Hello GetInfo</div>;
+    case Stages.Lobby:
+      return <PlayScreen></PlayScreen>;
+    case Stages.PlayerOne:
+      return <PlayScreen></PlayScreen>;
+    case Stages.PlayerTwo:
+      return <PlayScreen></PlayScreen>;
+    case Stages.Done:
+      return <WinnerScreen></WinnerScreen>
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GameState>
+      <ScreenStageWrapper></ScreenStageWrapper>
+    </GameState>
   );
 }
 
