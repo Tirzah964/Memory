@@ -1,0 +1,170 @@
+.backgroundWinner {
+    display: grid;
+    background-image: url("../../assets/Background.svg");
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 2fr 8fr 2fr;
+}
+
+.winnerTile {
+    display: grid;
+    grid-area: 2/2/3/3;
+    border-radius: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.winnerName {
+    display: flex;
+    color: white;
+    font-size: 4rem;
+    justify-content: center;
+    font-family: "Poppins";
+}
+
+
+.wGreeting {
+    display: flex;
+    color: white;
+    font-size: 3rem;
+    font-family: "Poppins";
+    justify-content: center;
+
+}
+
+.trophy {
+    justify-content: left;
+    padding-right: 0.5rem;
+}
+
+.goldenContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.goldenFirst {
+    display: flex;
+    background: linear-gradient(92.15deg, #FFD975 35.31%, #FFFFFF 135.61%);
+    border-radius: 0.5rem;
+    border: none;
+    width: 25rem;
+    height: 5rem;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+
+}
+
+.whiteSecond {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: none;
+    width: 25rem;
+    height: 5rem;
+    align-items: center;
+}
+
+.whiteContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 1rem;
+}
+
+.tinyIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+}
+
+.innerText {
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.placeText {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #0D4477;
+    padding-right: 1rem;
+}
+
+.winnerNames {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #0D4477;
+    padding-right: 0.5rem;
+
+}
+
+.winnerScore {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #0D4477;
+    padding-left: 0.5rem;
+}
+
+.reset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 164px;
+    height: 56px;
+    left: 638px;
+    top: 822px;
+    border: none;
+
+    background: #A7DAFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.resetDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.resetText {
+    width: 132px;
+    height: 16px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #164464;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr 6fr 1fr 2fr;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.backgroundIntro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr 6fr 1fr 2fr;
+    background-image: url("../../assets/Background.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.box1 {
+    display: grid;
+    grid-area: 1/1/2/3;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box2 {
+    grid-area: 1/2/2/3;
+    justify-content: right;
+    align-items: center;
+}
+
+.exit-button {
+    display: grid;
+    grid-area: 1/2/2/3;
+    width: 10rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    align-items: center;
+    place-content: center;
+}
+
+.header {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 50px;
+    /* margin-top: auto; */
+    color: whitesmoke
+}
+
+.box3 {
+    display: grid;
+    grid-area: 2/1/3/3;
+}
+
+.box4 {
+    display: grid;
+    grid-area: 3/1/4/2;
+    align-items: center;
+}
+
+.box5 {
+    display: grid;
+    grid-area: 3/2/4/2;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.box6 {
+    display: grid;
+    grid-area: 4/1/5/3;
+    border: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.start-button {
+    display: grid;
+    background-color: green;
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.75rem;
+    align-items: center;
+    place-content: center;
+}
+
+.buttons-text {
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: "Poppins";
+    align-items: center; 
+    justify-content: center;
+}
+
+.modal {
+    display: grid;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(184, 211, 230);
+    border: none;
+    border-radius: 0.75rem;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+
+.title {
+    font-size: 10px;
+}
+
+.modal-header {
+    display: grid;
+    font-size: 1.7rem;
+    font-family: "Poppins";
+    color: rgb(21, 105, 195);
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.modal-fields {
+    display: grid;
+    border: none;
+    border-radius: 0.75rem;
+    margin: 5px;
+    width: 15rem;
+    height: 3rem;
+    background-color: white;
+}
+
+.save-button {
+    display: grid;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 0.75rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(21, 105, 195);
+    color: white;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+}
+
+.modal-text {
+    display: grid;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgb(21, 105, 195);
+    font-weight: 700;
+    padding-left: 0.5rem;
+}
+
+.box7 {
+    display: grid;
+    grid-area: 5/1/6/3;
+    justify-content: center;
+    align-content: center;
+    border: none;
+}
