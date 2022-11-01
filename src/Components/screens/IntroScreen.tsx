@@ -44,32 +44,6 @@ function IntroScreen() {
     setNameLeft(e.target.value);
   };
 
-  // const IntroModal = (props: { trigger: any }) => {
-  //   return <Popup trigger={props.trigger} modal>
-  //       <div className="modal">
-  //         <div className="modal-header">Enter your names</div>
-  //         <input
-  //           required
-  //           value={nameRight}
-  //           className="modal-fields modal-text"
-  //           type="text"
-  //           onChange={handleChangeRight}
-  //         ></input>
-  //         <input
-  //           required
-  //           value={nameLeft}
-  //           className="modal-fields modal-text"
-  //           type="text"
-  //           onChange={handleChangeLeft}
-  //         ></input>
-
-  //         <button className="save-button" onClick={handleSave}>
-  //           Save
-  //         </button>
-  //       </div>
-  //     </Popup>
-  // };
-
   return (
     <div className="container">
       <div className="backgroundIntro">
@@ -92,13 +66,6 @@ function IntroScreen() {
           <img src={rocketMan}></img>
         </div>
         <div className="box6">
-          {/* <IntroModal
-            trigger={
-              <button className="start-button">
-                <p className="buttons-text">Let's Start</p>
-              </button>
-            }
-          /> */}
           <Popup
             trigger={
               <button className="start-button">
